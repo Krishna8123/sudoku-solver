@@ -19,6 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying app...'
+                sh 'docker run -d -p 8090:80 --name my-nginx-container my-nginx-image'
             }
         }
     }
