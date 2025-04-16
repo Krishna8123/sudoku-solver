@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('Clone') {
+            steps {
+                echo 'Cloning repository...'
+                git branch: 'main', url: 'https://github.com/Krishna8123/sudoku-solver.git'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building Docker image...'
