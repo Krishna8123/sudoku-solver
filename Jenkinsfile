@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Cloning repository...'
                 // Clone your repo (e.g., git checkout)
-                git 'https://github.com/Krishna8123/sudoku-solver.git'
+                // git 'https://github.com/Krishna8123/sudoku-solver.git'
             }
         }
         stage('Build') {
